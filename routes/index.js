@@ -11,7 +11,7 @@ router.get('/', function (req, res){
 // })
 
 router.get('/dashboard', ensureAuthenticated, (req, res)=>{
-    res.render('dashboard', {
+    res.render('pages/dashboard', {
         user:req.user
     })
 })
